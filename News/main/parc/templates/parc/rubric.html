@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends 'parc/base.html' %}
+
+{% block content %}
+
+{% for ele in current %}
+
+<h1>{{ele.title}}</h1>
+<h3>Категория: {{ele.categ}} </h3>
+{{ele.content}}
+<h3>Дата публикации: {{ele.time}}</h3>
+<hr>
+
+{% endfor %}
+
+{% endblock content %}
+
+
